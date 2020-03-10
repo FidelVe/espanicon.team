@@ -1,0 +1,15 @@
+{
+  "name": "espanicon-webpage",
+  "version": "1.0.0",
+  "description": "Website for the Espanicon P-Rep Team for the ICON network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Espanicon",
+    "ICON"
+  ],
+  "author": "fidelve",
+  "license": "ISC"
+}
