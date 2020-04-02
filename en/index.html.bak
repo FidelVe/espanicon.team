@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+	Transitive by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Espanicon</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="alt">
+      <div class="logo">
+        <a href="index.html"
+          >Espanicon <span>P-Rep for the ICON Network</span></a
+        >
+      </div>
+      <a href="#menu" class="toggle"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="./index.html">English</a></li>
+        <li><a href="../es/index.html">Spanish</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <!--
+			To use a video as your background, set data-video to the name of your video without
+			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+			formats to work correctly.
+		-->
+    <!-- <section id="banner" data-video="images/banner"> -->
+    <section id="banner">
+      <div class="inner">
+        <div
+          style="background-color: rgba(255,255,255,0.5); border-radius: 4px; width: 80%; max-width: 600px; margin: 10px auto;"
+        >
+          <div class="image fit">
+            <img src="../images/espanicon.png" alt="" />
+          </div>
+        </div>
+        <!-- <h1>ESPANICON</h1> -->
+        <p>
+          Bringing the ICON project to the Spanish speaking communities of the
+          world.
+        </p>
+        <a href="#one" class="button special scrolly">About Us</a>
+      </div>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style2">
+      <div class="inner">
+        <div>
+          <div class="box">
+            <!-- <div class="image fit"> -->
+            <!--   <img src="images/pic01.jpg" alt="" /> -->
+            <!-- </div> -->
+            <div class="content">
+              <header class="align-center">
+                <h2>About Us</h2>
+              </header>
+              <hr />
+              <p>
+              <div style="width: 80%;max-width: 150px; margin: 10px auto;">
+                <div class="image fit">
+                  <img src="../images/icon-logo.png" alt="" />
+                </div>
+              </div>
+                <b>ICON</b> is a blockchain project from South Korea with the
+                goal of <i>Hyperconnecting the World</i> and is doing so by
+                creating communities of
+                <i>Public Representatives (P-Reps)</i> around the world to
+                expand the network by creating Dapps that runs inside the
+                network, connecting blockchains, and reaching out to communities
+                around the world to teach them and spread awareness of the
+                project.
+              </p>
+              <p>
+              <div style="width: 80%;max-width: 150px; margin: 10px auto;">
+                <div class="image fit">
+                  <img src="../images/espanicon-logo.png" alt="" />
+                </div>
+              </div>
+                <b>Espanicon</b> is a team focused on breaking the Spanish
+                language barrier to increase the reach of the
+                <b>ICON</b> project to 400 million more people in the Spanish
+                speaking communities of the world and we do this by
+                collaborating with other teams to translate and create content
+                in Spanish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- One -->
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+        <div>
+          <div class="box">
+            <!-- <div class="image fit"> -->
+            <!--   <img src="images/pic01.jpg" alt="" /> -->
+            <!-- </div> -->
+            <div class="content">
+              <header class="align-center">
+                <h2>Our Projects</h2>
+              </header>
+              <hr />
+              <p>
+                As a P-Rep Team dedicated on breaking the Spanish language
+                barrier we are constantly in communications with several P-Rep
+                teams working on different kind of projects on the ICON network,
+                be it DApps development, media content creation, marketing or
+                community outreach we are dedicated to collaborate to translate
+                projects into Spanish and create content in Spanish.
+              </p>
+              <p>
+                Currently we have ongoing collaboration projects with several
+                amazing teams like
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ubikcapital"><b>Ubik</b></a
+                >,
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/mineable"><b>Mineable</b></a> and
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ICXcomics"><b>ICXComics</b></a
+                >.
+              </p>
+              <div style="width: 80%;max-width: 600px; margin: 10px auto;">
+                <div class="image fit">
+                  <img src="../images/mineable.png" alt="" />
+                </div>
+              </div>
+              <div style="width: 80%;max-width: 600px; margin: 10px auto;">
+                <div class="image fit">
+                  <img src="../images/iconshow.png" alt="" />
+                </div>
+              </div>
+              <div style="width: 80%;max-width: 600px; margin: 10px auto;">
+                <div class="image fit">
+                  <img src="../images/icxcomics.png" alt="" />
+                </div>
+              </div>
+              <p>
+                The collaboration work with these teams is ongoing as they are
+                constantly creating new content and we continuously translate
+                and publish it every week.
+              </p>
+              <p>
+                We also had the pleasure to collaborate with
+                <a target="_blank" rel="noopener noreferrer" href="https://iconation.team/">ICONation</a>. They are a
+                development focused P-Rep team with many applications ranging
+                from wallets to block explorers, games and so much more.
+              </p>
+              <div style="width: 80%;max-width: 600px; margin: 10px auto;">
+                <div class="image fit">
+                  <img src="../images/svalinn.png" alt="" />
+                </div>
+              </div>
+              <p>
+                With <b>ICONation</b> we had the opportunity to collaborate on a
+                development standpoint by submitting the internal code to allow
+                their open source Desktop wallet
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/iconation/Svalinn/"><i>Svallin</i>
+                </a>
+                to be multilanguage and to translate it into Spanish.
+              </p>
+              <p>
+                We are also constantly searching for new teams to collaborate
+                with, if you are a part of a P-Rep team and you are interested
+                in having your content reach 400 million more people across the
+                world, please contact us. We would be very happy to collaborate
+                with you!.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper">
+      <div class="inner">
+        <section>
+          <div class="box">
+            <div class="content">
+              <h2 class="align-center">Follow Us</h2>
+              <hr />
+              <p>If you are interested in our work and would like to support us please vote for our team so we can continue working on our goal to bring the ICON project to the Spanish speaking communities of the world!
+              </p>
+              If you want to contact us you can do so by entering our Telegram channel or sending us a message on twitter. You can also contact us by sending us an email to <a target="_blank" rel="noopener noreferrer" href="mailto:info@espanicon.team"><i>info@espanicon.team</i></a>.
+              </p>
+              <div style="width: 300px; display: flex; flex-flow: row nowrap; justify-content: space-around; margin: 10px auto">
+                  <a target="_blank" rel="noopener noreferrer" href="mailto:info@espanicon.team"><img style="height: 80px" src="../images/email.png" alt="email image" /></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://t.me/espanicon"><img style="height: 80px" src="../images/telegram.png" alt="telegram image" /></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/espanicon"><img style="height: 80px" src="../images/twitter.png" alt="twitter image" /></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@espanicon"><img style="height: 80px" src="../images/medium-logo.png" alt="medium image" /></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper">
+      <div class="inner">
+        <div class="copyright">
+          &copy; Espanicon / Design:
+          <a target="_blank" rel="noopener noreferrer" href="https://templated.co/">TEMPLATED</a>. / Banner 
+          <a
+            style='background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px'
+            href="https://unsplash.com/@nasa?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Download free do whatever you want high-resolution photos from NASA"
+            ><span style="display:inline-block;padding:2px 3px"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                viewBox="0 0 32 32"
+              >
+                <title>unsplash-logo</title>
+                <path
+                  d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
+                ></path></svg></span
+            ><span style="display:inline-block;padding:2px 3px">NASA</span></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/skel.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
