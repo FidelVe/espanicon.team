@@ -1,0 +1,15 @@
+/* sectionWithLogo.module.css */
+.section {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  min-width: 500px;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  min-width: 500px;
+}
+.imageContainer {
+  float: right;
+}
