@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
+.footer {
+  margin-top: auto;
+}
