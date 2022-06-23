@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+  align-items: center;
 }
 .header {
   display: flex;
@@ -9,6 +10,9 @@
   align-items: center;
   width: 100vw;
   justify-content: center;
+}
+.imageContainer {
+  max-width: 500px;
 }
 .footer {
   margin-top: auto;

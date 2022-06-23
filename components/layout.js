@@ -1,10 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./layout.module.css";
+import Image from "next/image";
+import styles from "../styles/layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 
 const name = "Espanicon";
 export const siteTitle = "Espanicon.team";
+const height = 500;
+const width = height * 3.06976744186;
 
 export default function Layout({ children }) {
   return (
@@ -28,6 +31,16 @@ export default function Layout({ children }) {
           <a>Contact</a>
         </Link>
       </header>
+      <div className={styles.imageContainer}>
+        <Image
+          priority
+          className={styles.image}
+          src="/images/espanicon.png"
+          height={height}
+          width={width}
+          alt="espanicon"
+        />
+      </div>
       <main>{children}</main>
       <footer className={styles.footer}>
         <p>Created by: Espanicon</p>
