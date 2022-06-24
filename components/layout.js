@@ -4,33 +4,12 @@ import Image from "next/image";
 import { v4 as uuidv4 } from "uuid";
 import styles from "../styles/layout.module.css";
 import utilStyles from "../styles/utils.module.css";
+import ContactItems from "./contactItems.js";
 
 const name = "Espanicon";
 export const siteTitle = "Espanicon.team";
 const height = 100;
 const width = height * 3.06976744186;
-const footerLinks = [
-  [
-    "/images/twitter-logo-black.png",
-    "https://twitter.com/espanicon",
-    { height: null, width: null }
-  ],
-  [
-    "/images/discord-logo-black.svg",
-    "https://discordapp.com/users/espanicon#4743/",
-    { height: null, width: null }
-  ],
-  [
-    "/images/github-logo-black.svg",
-    "https://github.com/FidelVe",
-    { height: 30, width: 30 }
-  ],
-  [
-    "/images/telegram-logo.svg",
-    "https://t.me/Espanicon_Prep",
-    { height: 35, width: 35 }
-  ]
-];
 
 function SectionBreak() {
   return (
@@ -94,22 +73,7 @@ export default function Layout({ children }) {
       <main className={styles.main}>{children}</main>
       <footer className={styles.footer}>
         <p>Visit Espanicon @</p>
-        <div className={styles.footerSection}>
-          {footerLinks.map(element => (
-            <a href={element[1]} target="_blank" key={uuidv4()}>
-              <div className={styles.footerLogoContainer}>
-                <Image
-                  priority
-                  className={`${utilStyles.borderCicle} ${styles.footerLogo}`}
-                  src={element[0]}
-                  height={element[2].height || 20}
-                  width={element[2].width || 20}
-                  alt="espanicon"
-                />
-              </div>
-            </a>
-          ))}
-        </div>
+        <ContactItems />
       </footer>
     </div>
   );
