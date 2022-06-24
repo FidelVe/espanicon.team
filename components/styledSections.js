@@ -27,12 +27,13 @@ export function SectionWithLogo({ path, float = "right", children }) {
   );
 }
 
-export function Section({ colored = false, children }) {
+export function Section({ colored = false, style = {}, children }) {
   return (
     <section
       className={
         colored ? `${styles.section} ${styles.colored}` : styles.section
       }
+      style={style}
     >
       {children}
     </section>

@@ -1,0 +1,71 @@
+.main {
+  border: 1px solid #fbbc59;
+  border-radius: 4px;
+  max-width: 420px;
+  overflow: hidden;
+  margin: 20px 5px;
+}
+.header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 0 10px;
+}
+.headerInfo {
+  display: flex;
+  flex-flow: column;
+}
+.linkParagraph > p {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 300px;
+  text-overflow: ellipsis;
+}
+.headerInfo > *:first-child {
+  align-self: center;
+  margin-top: 0px;
+}
+
+.headerInfo > h2 {
+  line-height: 1;
+}
+.headerInfo > p,
+.linkParagraph > p {
+  font-size: 0.7rem;
+  line-height: 1;
+  margin: 2px 0px;
+}
+.headerTags {
+  font-style: italic;
+  color: #4b5563;
+}
+.imageContainer {
+  margin-left: auto;
+  padding: 5px;
+}
+.body {
+  background-color: #fbbc59;
+  padding: 10px;
+}
+
+.body > p {
+  font-size: 0.8rem;
+}
+
+.ribbonContainer {
+  width: 40px;
+  transform: matrix(1, -0.8, 0, 1, 0, 10);
+}
+
+.ribbonSection {
+  height: 2px;
+}
+.ribbonOne {
+  background-color: #94004c;
+}
+.ribbonTwo {
+  background-color: #ed0044;
+}
+.ribbonThree {
+  background-color: #fbbc59;
+}
