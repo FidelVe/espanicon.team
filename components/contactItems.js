@@ -16,7 +16,7 @@ const footerLinks = [
   ],
   [
     "/images/github-logo-black.svg",
-    "https://github.com/FidelVe",
+    "https://github.fidel.engineer",
     { height: 30, width: 30, ratio: 35 / 30 }
   ],
   [
