@@ -4,15 +4,20 @@ import { v4 as uuidv4 } from "uuid";
 import Layout, { siteTitle } from "../components/layout.js";
 import Card, { ArticleCard } from "../components/card.js";
 import { SectionWithLogo, Section } from "../components/styledSections.js";
-import { getMediumData } from "../utils/projects.js";
+import { getMediumData, getDevToData } from "../utils/projects.js";
 import utilStyles from "../styles/utils.module.css";
 import styles from "../styles/projects.module.css";
 
 export async function getStaticProps() {
   let articles = {};
   const mediumData = await getMediumData();
+  const devToData = await getDevToData();
+  console.log("devToData");
+  console.log(devToData);
 
   articles.medium = [...JSON.parse(mediumData).items];
+  // TODO: parse the devto articles to show them
+  articles.devto = [...JSON.parse(devToData).items];
   return {
     props: {
       articles

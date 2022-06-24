@@ -33,7 +33,7 @@ export function ArticleCard({ from = "medium", data }) {
   const useImage = from === "medium" ? IMAGES.medium : null;
   const height = 100;
   return (
-    <div className={styles.main}>
+    <div className={`${styles.main} ${styles.articleMain}`}>
       <div className={styles.header}>
         <div className={styles.headerInfo}>
           <h2>{title}</h2>

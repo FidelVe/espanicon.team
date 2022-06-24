@@ -16,6 +16,16 @@ export async function getMediumData() {
   }
   return "null";
 }
+
+export async function getDevToData() {
+  try {
+    const res = await parse("https://dev.to/feed/espanicon");
+    return JSON.stringify(res, null, 3);
+  } catch (err) {
+    console.log(err);
+  }
+  return "null";
+}
 const utils = {
   getMediumData: getMediumData
 };
