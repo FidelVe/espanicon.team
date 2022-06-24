@@ -2,14 +2,23 @@
 .section {
   display: flex;
   flex-flow: column;
-  align-items: stretch;
+  align-items: center;
   min-width: 500px;
   width: 100%;
+  margin-bottom: 40px;
+  padding: 20px 0px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+.colored {
+  background-color: rgba(251, 188, 89);
 }
 .container {
-  max-width: 1200px;
+  max-width: 700px;
   min-width: 500px;
 }
-.imageContainer {
+.imageContainerRight {
   float: right;
+}
+.imageContainerLeft {
+  float: left;
 }

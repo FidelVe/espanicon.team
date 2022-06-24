@@ -27,6 +27,28 @@ export default function Home() {
           </p>
         </SectionWithLogo>
       </Section>
+      <Section colored>
+        <SectionWithLogo float="left" path="/images/icon-logo.png">
+          <h1>ICON: Connecting blockchains and communities.</h1>
+          <p>
+            <b>ICON</b> is a public blockchain protocol building a
+            hyperconnected future with BTP, a chain-agnostic interoperability
+            solution.
+          </p>
+          <p>
+            ICX is the currency that powers the ICON ecosystem. ICX has a
+            variety of use cases including staking, network governance,
+            collateralization on DeFi platforms, and more.
+          </p>
+          <p>
+            You can learn more about <b>ICON</b> by visiting the following{" "}
+            <a href="https://icon.community/learn/" target="_blank">
+              link!
+            </a>
+            .
+          </p>
+        </SectionWithLogo>
+      </Section>
     </Layout>
   );
 }

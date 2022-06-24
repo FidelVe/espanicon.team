@@ -3,10 +3,16 @@ import styles from "../styles/styledSections.module.css";
 const logoHeight = 100;
 const logoWidth = 100;
 
-export function SectionWithLogo({ path, children }) {
+export function SectionWithLogo({ path, float = "right", children }) {
   return (
     <div className={styles.container}>
-      <div className={styles.imageContainer}>
+      <div
+        className={
+          float === "right"
+            ? styles.imageContainerRight
+            : styles.imageContainerLeft
+        }
+      >
         <Image
           priority
           className={styles.image}
@@ -21,6 +27,14 @@ export function SectionWithLogo({ path, children }) {
   );
 }
 
-export function Section({ children }) {
-  return <section className={styles.section}>{children}</section>;
+export function Section({ colored = false, children }) {
+  return (
+    <section
+      className={
+        colored ? `${styles.section} ${styles.colored}` : styles.section
+      }
+    >
+      {children}
+    </section>
+  );
 }

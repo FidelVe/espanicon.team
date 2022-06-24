@@ -1,13 +1,16 @@
 .container {
   display: flex;
   flex-flow: column;
-  min-height: 100vh;
+  min-height: 100%;
   align-items: center;
   /* background-color: #0c4a6e; */
   /* background-color: #0c4a6e; */
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
   display: flex;
   flex-flow: column;
   margin-bottom: 20px;
@@ -17,17 +20,15 @@
 
 .header,
 .footer {
-  width: 100vw;
+  width: 100%;
 }
 .headerContainer {
-  width: 100vw;
+  width: 100%;
   border: 2px solid #94004c;
   border-top: none;
   border-left: none;
   border-right: none;
-  /* background-color: #bae6fd; */
   background-color: #7dd3fc;
-  /* background-color: #e2f1ff; */
   display: flex;
   flex-flow: column;
 }
@@ -41,7 +42,7 @@
   padding: 0px 10px;
 }
 .headerSection {
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   /* min-width: 500px; */
   align-self: center;
@@ -82,7 +83,8 @@
   transform: translateY(2px);
 }
 .routesSection > a:hover {
-  color: #e17c74;
+  /* color: #e17c74; */
+  color: rgba(251, 188, 89, 1);
 }
 .routesSection > a {
   color: #94004c;
@@ -90,15 +92,16 @@
   font-weight: bold;
 }
 .main {
+  margin-top: 130px;
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   min-width: 500px;
   display: flex;
   flex-flow: column;
   align-items: center;
   align-self: center;
   text-align: justify;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
 }
 .footer {
   background-color: #171717;
@@ -107,8 +110,10 @@
 .footer > *:first-child {
   margin-left: auto;
   margin-right: 10px;
-  /* color: #94004c; */
   color: #7dd3fc;
+}
+.footer > *:first-child:hover {
+  color: rgba(251, 188, 89);
 }
 .footerSection {
   display: flex;
@@ -124,14 +129,15 @@
   justify-content: center;
   margin-right: 5px;
   transition: background-color 0.4s, box-shadow 0.4s;
-  box-shadow: 0 0 0 0 #94004c;
+  box-shadow: 0 0 0 0 rgba(251, 188, 89);
+  cursor: pointer;
 }
 .footerLogoContainer:hover {
   transform: translateY(1px);
-  background-color: rgba(148, 0, 76, 0.6); /* #e30040 */
+  background-color: rgba(251, 188, 89, 0.6); /* #e30040 */
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
-  box-shadow: 0 0 6px 6px rgba(148, 0, 76, 0.25);
+  box-shadow: 0 0 6px 6px rgba(251, 188, 89, 0.25);
 }
 
 /* .footerLogo { */
