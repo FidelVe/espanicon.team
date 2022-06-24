@@ -18,7 +18,9 @@
 }
 .imageContainerRight {
   float: right;
+  transform: translateX(50px);
 }
 .imageContainerLeft {
   float: left;
+  transform: translateX(-50px);
 }
