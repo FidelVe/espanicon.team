@@ -13,6 +13,18 @@ const IMAGES = {
     width: 390,
     height: 390,
     ratio: 1
+  },
+  devto: {
+    path: "/images/dev-logo-black.png",
+    width: 1998,
+    height: 1998,
+    ratio: 1
+  },
+  telegram: {
+    path: "/images/telegram-logo.svg",
+    width: 1000,
+    height: 1000,
+    ratio: 1
   }
 };
 
@@ -30,29 +42,31 @@ export function ArticleCard({ from = "medium", data }) {
   const title = data.title;
   const link = data.link;
   const tags = data.category.join(" ");
-  const useImage = from === "medium" ? IMAGES.medium : null;
+  const useImage = from === "medium" ? IMAGES.medium : IMAGES.devto;
   const height = 100;
   return (
     <div className={`${styles.main} ${styles.articleMain}`}>
-      <div className={styles.header}>
+      <div className={styles.articleHeader}>
         <div className={styles.headerInfo}>
           <h2>{title}</h2>
-          <div className={styles.linkParagraph}>
-            <p>
-              <a href={link}>{link}</a>
-            </p>
-          </div>
-          <p className={styles.headerTags}>Tags: {tags}</p>
         </div>
-        <div className={styles.imageContainer}>
-          <Image
-            priority
-            height={height}
-            width={height * useImage.ratio}
-            className={styles.image}
-            alt="logo"
-            src={useImage.path}
-          />
+        <div className={styles.headerBody}>
+          <div className={styles.headerBodyContainer}>
+            <p className={styles.linkParagraph}>
+              <a href={link}>{link.slice(0, 70) + "..."}</a>
+            </p>
+            <p className={styles.headerTags}>Tags: {tags}</p>
+          </div>
+          <div className={styles.imageContainer}>
+            <Image
+              priority
+              height={height}
+              width={height * useImage.ratio}
+              className={styles.image}
+              alt="logo"
+              src={useImage.path}
+            />
+          </div>
         </div>
       </div>
       {/* <div className={styles.body}>{children}</div> */}
@@ -65,8 +79,10 @@ export default function Card({
   link = "bar",
   tags = "baz",
   height = 100,
+  logo = "react",
   children
 }) {
+  const useImage = logo === "react" ? IMAGES.react : IMAGES.telegram;
   return (
     <div className={styles.main}>
       <Ribbon />
@@ -85,7 +101,7 @@ export default function Card({
             width={height * IMAGES.react.ratio}
             className={styles.image}
             alt="logo"
-            src={IMAGES.react.path}
+            src={useImage.path}
           />
         </div>
       </div>
