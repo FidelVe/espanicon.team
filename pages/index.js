@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Section>
         <SectionWithLogo path="/images/espanicon-logo.png">
-          <h1>P-rep for the ICON Network</h1>
+          <h2 className={styles.title}>P-rep for the ICON Network</h2>
           <p>
             <b>Espanicon</b> is a validator node in the <b>ICON Network</b>. Our
             goal is to participate in the chain governance of the network and
@@ -29,7 +29,7 @@ export default function Home() {
       </Section>
       <Section colored>
         <SectionWithLogo float="left" path="/images/icon-logo.png">
-          <h1>ICON: Connecting blockchains and communities.</h1>
+          <h2 className={styles.title}>ICON: Connecting blockchains and communities.</h2>
           <p>
             <b>ICON</b> is a public blockchain protocol building a
             hyperconnected future with BTP, a chain-agnostic interoperability

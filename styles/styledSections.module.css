@@ -13,9 +13,11 @@
   background-color: rgba(251, 188, 89);
 }
 .container {
-  max-width: 700px;
+  max-width: 70%;
   min-width: 500px;
+  padding: 10px 20px;
 }
+
 .imageContainerRight {
   float: right;
   transform: translateX(50px);
