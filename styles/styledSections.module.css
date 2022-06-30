@@ -3,7 +3,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  min-width: 500px;
+  /* min-width: 500px; */
   width: 100%;
   margin-bottom: 10px;
   padding: 20px 0px;
@@ -13,9 +13,9 @@
   background-color: rgba(251, 188, 89);
 }
 .container {
-  max-width: 70%;
-  min-width: 500px;
-  padding: 10px 20px;
+  /* max-width: 70%; */
+  /* min-width: 500px; */
+  padding: 10px 55px;
 }
 
 .imageContainerRight {

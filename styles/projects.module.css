@@ -1,3 +1,9 @@
+.description {
+  max-width: 900px;
+}
+.cards {
+  max-width: 1600px;
+}
 .container {
   display: flex;
   flex-flow: row;
