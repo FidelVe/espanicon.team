@@ -12,12 +12,10 @@ export async function getStaticProps() {
   let articles = {};
   const mediumData = await getMediumData();
   const devToData = await getDevToData();
-  console.log("devToData");
-  console.log(devToData);
 
-  articles.medium = [...JSON.parse(mediumData).items];
+  articles.medium = [...JSON.parse(mediumData)];
   // TODO: parse the devto articles to show them
-  articles.devto = [...JSON.parse(devToData).items];
+  articles.devto = [...JSON.parse(devToData)];
   return {
     props: {
       articles

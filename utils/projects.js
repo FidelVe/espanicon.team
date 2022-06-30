@@ -1,32 +1,35 @@
-import httpsRequest from "./httpsRequest.js";
 import { parse } from "rss-to-json";
 
-export async function getMediumData() {
+export async function getDataFromRSSFeed(feed) {
   try {
-    // const res = await httpsRequest({
-    //   hostname: "medium.com",
-    //   // port: 80,
-    //   path: "/feed/@espanicon"
-    //   // method: "GET"
-    // });
-    const res = await parse("https://medium.com/feed/@espanicon");
-    return JSON.stringify(res, null, 3);
+    let parsedData = [];
+    const dataFromRSSFeed = await parse(feed);
+
+    for (let article of dataFromRSSFeed.items) {
+      parsedData.push({
+        ...article,
+        content: null, // passing everything except content
+        content_encoded: null
+      });
+    }
+    return JSON.stringify(parsedData);
+
+    // return JSON.stringify(res, null, 3);
   } catch (err) {
     console.log(err);
   }
   return "null";
+}
+export async function getMediumData() {
+  return await getDataFromRSSFeed("https://medium.com/feed/@espanicon");
 }
 
 export async function getDevToData() {
-  try {
-    const res = await parse("https://dev.to/feed/espanicon");
-    return JSON.stringify(res, null, 3);
-  } catch (err) {
-    console.log(err);
-  }
-  return "null";
+  return await getDataFromRSSFeed("https://dev.to/feed/espanicon");
 }
+
 const utils = {
-  getMediumData: getMediumData
+  getMediumData: getMediumData,
+  getDevToData: getDevToData
 };
 export default utils;
