@@ -32,6 +32,10 @@ export default function Layout({ children }) {
         />
         <meta name="og:title" content={siteTitle} />
       </Head>
+      <input id="menu-toggle" className={styles.menuToggle} type="checkbox" />
+      <label className={styles.menuButtonContainer} htmlFor="menu-toggle">
+        <div className={styles.menuButton}></div>
+      </label>
       <header className={styles.header}>
         <div className={styles.headerContainer}>
           <div className={styles.headerSection}>
@@ -48,6 +52,7 @@ export default function Layout({ children }) {
                   />
                 </div>
               </Link>
+              <div className={styles.hamburguerMenuShadow}></div>
             </div>
             <div className={styles.routesContainer}>
               <div className={styles.routesSection}>

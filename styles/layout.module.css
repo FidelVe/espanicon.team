@@ -11,7 +11,7 @@
   /* min-width: 500px; */
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 998;
   display: flex;
   flex-flow: column;
   margin-bottom: 20px;
@@ -32,6 +32,7 @@
   background-color: #7dd3fc;
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 
 .headerSection,
@@ -43,10 +44,12 @@
   padding: 0px 10px;
 }
 .headerSection {
-  max-width: 700px;
   width: 100%;
+  max-width: 900px;
+  /* width: 100%; */
+  min-height: 120px;
   /* min-width: 500px; */
-  align-self: center;
+  /* align-items: space-around; */
 }
 .logo {
   transform: translateY(4px);
@@ -55,6 +58,8 @@
 .logoContainer {
   margin-right: auto;
   cursor: pointer;
+  display: flex;
+  flex-flow: row;
   /* border: 1px solid rgba(255, 255, 255, 0.35); */
   /* background-color: rgba(255, 255, 255, 0.7); */
   /* border-radius: 4px; */
@@ -189,6 +194,63 @@
     rgba(251, 188, 89, 0.1) 100%
   );
 }
+
+/* Hamburguer menu */
+.hamburguerMenuShadow {
+  width: 0px;
+}
+.menuButtonContainer {
+  position: fixed;
+  top: 45px;
+  right: 30px;
+  display: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.menuButton,
+.menuButton::before,
+.menuButton::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menuButton::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menuButton::after {
+  content: "";
+  margin-top: 8px;
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton {
+  background: rgba(255, 255, 255, 0);
+}
+.menuToggle:checked + .menuButtonContainer .menuButton::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
 /* devices less than 640px */
 @media (max-width: 639.98px) {
   .main h1,
@@ -196,9 +258,14 @@
     font-size: 1.2rem;
     text-align: center;
   }
-}
-/* devices less than 1008px */
-@media (max-width: 1006.98px) {
+  .hamburguerMenuShadow {
+    width: 30px;
+    margin-left: 50px;
+  }
+  .routesContainer {
+    height: 0px;
+    overflow: hidden;
+  }
   .headerSection {
     flex-flow: column;
     /* align-items: center; */
@@ -208,4 +275,24 @@
   .logoContainer {
     margin: 5px;
   }
+
+  .menuButtonContainer {
+    display: flex;
+    z-index: 999;
+  }
+  /* add the following height to 120px and set that as */
+  /* margin-top on following .main item */
+  .menuToggle:checked ~ .header .routesContainer {
+    flex-flow: column;
+    align-items: center;
+    height: 100px;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menuToggle:checked ~ .main {
+    margin-top: 220px;
+    transition: margin-top 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+}
+/* devices less than 1008px */
+@media (max-width: 1006.98px) {
 }
