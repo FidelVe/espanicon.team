@@ -1,0 +1,22 @@
+{
+  "representative": {
+    "logo": {
+      "logo_256": "https://espanicon.team/images/espanicon-logo.png",
+      "logo_1024": "https://espanicon.team/images/espanicon-logo.png",
+      "logo_svg": "https://espanicon.team/images/espanicon-logo.png"
+    },
+    "media": {
+      "twitter": "https://twitter.com/espanicon",
+      "github": "https://github.com/Espanicon",
+      "telegram": "https://t.me/Espanicon_Prep"
+    }
+  },
+  "server": {
+    "location": {
+      "country": "VEN",
+      "city":  "CCS"
+    },
+    "server_type": "cloud",
+    "api_endpoint": "http://65.108.47.72:9000"
+  }
+}
