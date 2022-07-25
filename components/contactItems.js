@@ -16,7 +16,7 @@ const footerLinks = [
   ],
   [
     "/images/github-logo-black.svg",
-    "https://github.fidel.engineer",
+    "https://github.com/Espanicon",
     { height: 30, width: 30, ratio: 35 / 30 }
   ],
   [

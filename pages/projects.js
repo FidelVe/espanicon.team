@@ -75,7 +75,7 @@ export default function Projects({ articles }) {
             </Card>
             <Card
               title="ICON node monitor"
-              link="https://github.com/FidelVe/icon-node-monitor"
+              link="https://github.com/Espanicon"
               tags="nodejs, telegram, bot, ICON"
               logo="telegram"
             >
