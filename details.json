@@ -1,28 +1,22 @@
 {
   "representative": {
     "logo": {
-      "logo_256": "http://prep-registration-good-reindeer.s3-website-us-east-1.amazonaws.com/logo.jpg",
-      "logo_1024": "http://prep-registration-good-reindeer.s3-website-us-east-1.amazonaws.com/logo.jpg",
-      "logo_svg": "http://prep-registration-good-reindeer.s3-website-us-east-1.amazonaws.com/."
+      "logo_256": "https://espanicon.team/images/espanicon-logo.png",
+      "logo_1024": "https://espanicon.team/images/espanicon-logo.png",
+      "logo_svg": "https://espanicon.team/images/espanicon-logo.png"
     },
     "media": {
-      "steemit": "",
       "twitter": "https://twitter.com/espanicon",
-      "youtube": "",
-      "facebook": "",
-      "github": "",
-      "reddit": "",
-      "keybase": "",
-      "telegram": "t.me/espanicon",
-      "wechat": ""
+      "github": "https://github.com/Espanicon",
+      "telegram": "https://t.me/Espanicon_Prep"
     }
   },
   "server": {
     "location": {
       "country": "VEN",
-      "city":  "CCS"
+      "city": "CCS"
     },
     "server_type": "cloud",
-    "api_endpoint": "35.170.9.187:9000"
+    "api_endpoint": "https://api.espanicon.team"
   }
 }
